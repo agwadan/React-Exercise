@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <MainJokes />
+      <ToDo />
       
       <Footer/>
     </div>
