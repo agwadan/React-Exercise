@@ -2,6 +2,12 @@ import React from 'react';
 
 const  Footer = () => {
 
+    /* const numbers = [1,2,3,4];
+    const tripled = numbers.map(function(num){
+        return num * 3;
+    })
+    console.log(tripled) */
+
     const firstName = "Daniel";
     const lastName = "Agwa"
 
@@ -10,7 +16,8 @@ const  Footer = () => {
         <h3>
             This is my footer element.
         </h3> 
-        <p> <br></br>Written by {`${firstName} ${lastName}`}</p>
+        
+    <p>Written by {`${firstName} ${lastName}`}</p>
     </footer>
     )
 }

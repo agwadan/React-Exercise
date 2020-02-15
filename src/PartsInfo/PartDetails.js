@@ -5,10 +5,10 @@ function PartDetails (props)  {
     return (
         
             <div className="part-card">
-            <img src={props.details.imgUrl} alt="product"/>
-            <h3>Title: {props.details.name} </h3>
-            <p>Brand: {props.details.brand}  </p>
-            <p>Origin: {props.details.origin} </p>
+            <img src={props.imgUrl} alt="product"/>
+            <h3>Title: {props.name} </h3>
+            <p>Brand: {props.brand}  </p>
+            <p>Origin: {props.origin} </p>
         </div>
         
     )

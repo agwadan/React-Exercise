@@ -6,14 +6,15 @@ import Header from './components/Header';
 import ToDo from './components/ToDoList/ToDo';
 import Footer from './components/Footer';
 import TimeOfDay from './components/TimeOfDay';
-import PartsInfo from './PartsInfo/PartsInfo'
+import MainParts from './PartsInfo/MainParts'
+import MainJokes from './components/Jokes/MainJokes';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <PartsInfo />
+      <MainParts />
       
       <Footer/>
     </div>
