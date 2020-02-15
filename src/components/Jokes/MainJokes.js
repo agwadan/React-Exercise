@@ -2,7 +2,8 @@ import React from 'react';
 import Jokes from './Jokes';
 import jokesData from './jokesData';
 
-const MainJokes = () => {
+class MainJokes extends React.Component {
+    render(){
 
     const jokesComponents = jokesData.map((joke) => {
         return(
@@ -17,6 +18,7 @@ const MainJokes = () => {
         <div>
             {jokesComponents}
         </div>)
+    }
 }
 
 export default MainJokes

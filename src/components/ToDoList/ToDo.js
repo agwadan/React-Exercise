@@ -2,9 +2,17 @@ import React from "react";
 import ToDoItem from "./ToDoItem";
 import todoData from "./todoData";
 
-function ToDo(){
+class ToDo extends React.Component {
 
-  const todoItems = todoData.map((item)=>{
+  constructor(){
+    super()
+    this.state = {
+      todos: todoData
+    }
+  }
+  render(){
+
+  const todoItems = this.state.todos.map((item)=>{
     return(
     <ToDoItem 
       key={item.id}
@@ -15,7 +23,7 @@ function ToDo(){
         <div className="todo-list">
           {todoItems}
           </div>
-        )
+        )}
 }
 
 export default ToDo;

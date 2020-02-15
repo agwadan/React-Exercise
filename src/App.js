@@ -8,13 +8,14 @@ import Footer from './components/Footer';
 import TimeOfDay from './components/TimeOfDay';
 import MainParts from './PartsInfo/MainParts'
 import MainJokes from './components/Jokes/MainJokes';
+import Counter from './components/Counter';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <ToDo />
+      <Counter />
       
       <Footer/>
     </div>

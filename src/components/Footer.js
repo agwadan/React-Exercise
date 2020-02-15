@@ -1,15 +1,18 @@
 import React from 'react';
 
-const  Footer = () => {
+class  Footer extends React.Component {
 
-    /* const numbers = [1,2,3,4];
-    const tripled = numbers.map(function(num){
-        return num * 3;
-    })
-    console.log(tripled) */
+    constructor(){
+        super()
+        this.state = {
+            firstName: "Agwa",
+            lastName: "Daniel",
+            finalName: "Abraham"
+        }
+    }
 
-    const firstName = "Daniel";
-    const lastName = "Agwa"
+    render()
+{
 
     return (
     <footer className="footer">
@@ -17,9 +20,9 @@ const  Footer = () => {
             This is my footer element.
         </h3> 
         
-    <p>Written by {`${firstName} ${lastName}`}</p>
+    <p>Written by {`${this.state.firstName} ${this.state.lastName} ${this.state.finalName}`}</p>
     </footer>
-    )
+    )}
 }
 
 export default Footer
