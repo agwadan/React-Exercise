@@ -2,9 +2,31 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Header from './components/Header';
+import ToDo from './components/ToDoList/ToDo';
+import Footer from './components/Footer';
+import TimeOfDay from './components/TimeOfDay';
+import PartsInfo from './PartsInfo/PartsInfo'
+
+
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Header/>
+      <PartsInfo />
+      
+      <Footer/>
+    </div>
+   
+  );
+}
+
+export default App;
+
+
+//The commented code below is the default contents for App.js
+
+ /* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,8 +41,4 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+    </div> */
