@@ -9,13 +9,14 @@ import TimeOfDay from './components/TimeOfDay';
 import MainParts from './PartsInfo/MainParts'
 import MainJokes from './components/Jokes/MainJokes';
 import Counter from './components/Counter';
+import MainCondition from './components/ConditionalRendering/MainCondition';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <MainParts/>
+      <MainCondition/>
       
       <Footer/>
     </div>
