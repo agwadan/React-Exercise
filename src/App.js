@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <Counter />
+      <MainParts/>
       
       <Footer/>
     </div>
