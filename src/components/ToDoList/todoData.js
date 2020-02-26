@@ -2,17 +2,17 @@ const todoData = [
 {
     id: 1,
     task: "Brushing",
-    completed: true
+    completed: false
 },
 {
     id: 2,
     task: "Breakfast",
-    completed: true
+    completed: false
 },
 {
     id: 3,
     task: "Coding",
-    completed: true
+    completed: false
 },
 
 ]

@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <ConditionalRenderingPractice/>
+      <ToDo/>
       
       <Footer/>
     </div>
