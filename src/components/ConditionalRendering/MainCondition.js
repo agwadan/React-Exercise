@@ -6,7 +6,11 @@ export default class MainCondition extends Component {
     constructor(){
         super()
         this.state = {
-            isLoading: true
+            isLoading: true,
+            unreadMessages: [
+                "Your mum called.",
+                "Hi"
+            ]
         }
     }
 
@@ -21,9 +25,13 @@ export default class MainCondition extends Component {
     render() {
         return (
             <div>
-                <Conditional 
-                    isLoading={this.state.isLoading}
-                />
+                {this.state.isLoading ? 
+                <h5>Hold On...</h5> :
+                <Conditional />}
+
+                {this.state.unreadMessages.length > 0 && 
+                <h4>You have {this.state.unreadMessages.length} unread messages.</h4>
+                }
             </div>
         )
     }
