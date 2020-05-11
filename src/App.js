@@ -1,7 +1,6 @@
 import React from 'react';
 //import logo from './logo.svg';
 //import './App.css';
-
 /* import Header from './components/Header';
 import ToDo from './components/ToDoList/ToDo';
 import Footer from './components/Footer';
@@ -13,61 +12,19 @@ import MainCondition from './components/ConditionalRendering/MainCondition';
 import ConditionalRenderingPractice from './components/ConditionalRenderingPractice'; */
 
 import {Cards, Chart, CountryPicker} from './components/Covid19';
-import styles from './App.module.css';
-import {fetchData} from './api';
-
-
+import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 
 class App extends React.Component {
 
-    state = {
-    data : {} ,
-  }
-
-  async componentDidMount(){
-    const data = await fetchData();
-    this.setState({data});
-
-     
-    console.log(data); 
-    
-   
-      
-  }
-
   render(){
-
-    const {data} = this.state;
-
-  return (
-    <div className={styles.container}>
-      <Cards data={data}/>
-      <CountryPicker />
-      <Chart />
-    </div>
-   
-  );
+    return (
+      <div className={styles.container}> 
+        <Cards />
+        <Chart />
+        <CountryPicker />
+      </div>
+    );
   }
 }
 
 export default App;
-
-
-//The commented code below is the default contents for App.js
-
- /* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div> */
