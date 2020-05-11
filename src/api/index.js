@@ -1,49 +1,12 @@
 import axios from 'axios';
 
-const url = 'https://covid19.mathdro.id/api';
+const url = 'https://covid19.mathdro.id/api'; //---------------------------- variable to hold the url to the api.
 
 export const fetchData = async () => {
-
     try {
-        const {data} = await axios.get(url);   //------------------------------- Destructuring the data.  
-        
-        const modifiedData = {
-            confirmed: data.confirmed,
-            recovered: data.recovered,
-            deaths: data.deaths,
-            lastUpdate: data.lastUpdate
-        }//--------------------------------------------------------------------- Above, we're getting only the objects items we need from the destructured data.
-
-        return modifiedData;
+        const {data: {confirmed, recovered, deaths, lastUpdate}} = await axios.get(url); //--------------------------- Fetching data and destructuring it immediately from the api declared earlier.
+        return {confirmed, recovered, deaths, lastUpdate} //---------------------------------------------------------- returning the fetched data.
     } catch (error) {
-        
-    }
-
-}
-
-export const fetchDailyData = async () => {
-    try {
-        const {data} = await axios.get(`${url}/daily`);
-
-        const reModifiedData = data.map((dailyData) => ({
-            confirmed: dailyData.confirmed.total,
-            deaths: dailyData.deaths.total,
-            date: dailyData.reportDate 
-        }))
-        return reModifiedData;
-        
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export const fetchCountries = async () => {
-    try {
-        const {data: {countries}} = await axios.get(`${url}/countries`);
-       
-        return fetchCountries.map((country) => country.name);
-    } catch (error) {
-        console.log(error);
         
     }
 }

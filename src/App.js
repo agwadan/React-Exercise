@@ -13,13 +13,26 @@ import ConditionalRenderingPractice from './components/ConditionalRenderingPract
 
 import {Cards, Chart, CountryPicker} from './components/Covid19';
 import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
+import {fetchData} from './api';
 
 class App extends React.Component {
 
+  state = {
+    data: {} //--------------------------------------------------- data object initialized to be filled with data fetched from he api.
+  }
+
+  async componentDidMount(){
+    const fetchedData = await fetchData();
+    this.setState({data: fetchedData})//---------------------------- Filling the data object initialized inside state with the data fetched from the api.
+  }
+
   render(){
+
+    const {data} = this.state;//---------------------------------- Destructuring the data to be passed to the Cards component.
+
     return (
       <div className={styles.container}> 
-        <Cards />
+        <Cards data={data}/>
         <Chart />
         <CountryPicker />
       </div>
