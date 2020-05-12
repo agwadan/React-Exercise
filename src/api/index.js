@@ -1,4 +1,5 @@
 import axios from 'axios';
+import CountryPicker from '../components/Covid19/CountryPicker/CountryPicker';
 
 const url = 'https://covid19.mathdro.id/api'; //---------------------------- variable to hold the url to the api.
 
@@ -24,6 +25,18 @@ export const fetchDailyData = async () => {
         return modifiedData;
         
     } catch (error) {
+        console.log(error);
         
+    }
+}
+
+export const fetchCountries = async () => {
+    try {
+        const {data: {countries}} = await axios.get(`${url}/countries`);
+        return countries.map((country) => country.name);
+        
+    } catch (error) {
+        console.log(error);
+           
     }
 }
