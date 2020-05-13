@@ -18,12 +18,22 @@ import {fetchData} from './api';
 class App extends React.Component {
 
   state = {
-    data: {} //--------------------------------------------------- data object initialized to be filled with data fetched from he api.
+    data: {}, //--------------------------------------------------- data object initialized to be filled with data fetched from the api.
+    country: ''
   }
 
   async componentDidMount(){
     const fetchedData = await fetchData();
-    this.setState({data: fetchedData})//---------------------------- Filling the data object initialized inside state with the data fetched from the api.
+    this.setState({data: fetchedData}) //---------------------------- Filling the data object initialized inside state with the data fetched from the api.
+  }
+
+  /* Function to handle change when a different country is picked. */
+  handleCountryChange = async (country) => {
+    const fetchedData = await fetchData(country);
+    console.log(fetchedData);
+    
+    console.log(country);
+    
   }
 
   render(){
@@ -33,7 +43,7 @@ class App extends React.Component {
     return (
       <div className={styles.container}> 
         <Cards data={data}/>
-        <CountryPicker />
+        <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart />
       </div>
     );
