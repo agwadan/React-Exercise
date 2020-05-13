@@ -14,6 +14,7 @@ import ConditionalRenderingPractice from './components/ConditionalRenderingPract
 import {Cards, Chart, CountryPicker} from './components/Covid19';
 import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 import {fetchData} from './api';
+import coronaImage from './components/Covid19/Images/image.png';
 
 class App extends React.Component {
 
@@ -41,6 +42,7 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}> 
+        <img className={styles.image} src={coronaImage} alt="CoViD-19"/>
         <Cards data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart data={data} country={country}/>
