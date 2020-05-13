@@ -30,21 +30,20 @@ class App extends React.Component {
   /* Function to handle change when a different country is picked. */
   handleCountryChange = async (country) => {
     const fetchedData = await fetchData(country);
-    console.log(fetchedData);
-    
-    console.log(country);
-    
+    this.setState({
+                    data: fetchedData,
+                    country: country}); //------------------------ Assigning fetched data for the specified country to the state.
   }
 
   render(){
 
-    const {data} = this.state;//---------------------------------- Destructuring the data to be passed to the Cards component.
+    const {data, country} = this.state;//---------------------------------- Destructuring the data and to be passed to the Cards and chart components.
 
     return (
       <div className={styles.container}> 
         <Cards data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
-        <Chart />
+        <Chart data={data} country={country}/>
       </div>
     );
   }
