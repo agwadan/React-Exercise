@@ -2,10 +2,12 @@ import React from 'react';
 
 function Book(pips) {
 
+    const {title, origin} = pips; //-------------- destructuring the "pips"
+
     console.log(pips);
     return (
         <div>
-            <h1>{pips.title} is a good Presenter</h1>
+            <h2>{title} is a good Presenter from {origin}.</h2>
         </div>
     );
 }
