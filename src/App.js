@@ -10,7 +10,7 @@ import MainJokes from './components/Jokes/MainJokes';
 import Counter from './components/Counter';
 import MainCondition from './components/ConditionalRendering/MainCondition';
 import ConditionalRenderingPractice from './components/ConditionalRenderingPractice'; 
-import Book from './components/Book';
+import Books from './components/Books/Books';
 
 import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -20,9 +20,7 @@ class App extends React.Component {
    return(
      <div>
        <Header />
-       <Book title='Men are from Mars and Women are from Venus.'/>
-       <Book title='Two and A half Men'/>
-       <Book />
+       <Books />
      </div>
      
    );
