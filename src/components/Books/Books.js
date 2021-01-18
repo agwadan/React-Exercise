@@ -1,22 +1,38 @@
 import React from 'react';
 import Book from './Book';
 
-const grandTour = {
-	title: "Jeremy Clarkson",
-	imgUrl: "logo192.png"
-}
+const grandTour = [
+  {
+    id: 1,
+    title: "Jeremy Clarkson",
+    origin: 'Doncaster',
+    imgUrl: "logo192.png"
+  },
+  {
+    id: 2,
+    title: 'Richard Hammond',
+    origin: 'Birmingham',
+    imgUrl: "logo192.png"
+  },
+  {
+    id: 3,
+    title: 'James May',
+    origin: 'some place I do not know',
+    imgUrl: 'Turbo2.png'
+  }
+]
 
 function Books(pips) {
 
-	return (
-		<div>
-			<Book title='Jeremy Clarkson' origin='Doncaster' img={grandTour.imgUrl} />
-			<Book title='Richard Hammond' origin='Birmingham'>
-				<p>He is a short man.</p>
-			</Book>
-			<Book title='James May' origin='some place I do not  know' />
-		</div>
-	);
+  return (
+    <div>
+      {grandTour.map((pres) => {
+        const { title, origin, imgUrl } = pres;
+        return <Book key={pres.id} pres={pres}></Book>;
+      })
+      }
+    </div>
+  );
 }
 
 export default Books;
