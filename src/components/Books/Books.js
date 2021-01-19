@@ -28,7 +28,7 @@ function Books(pips) {
     <div>
       {grandTour.map((pres) => {
         const { title, origin, imgUrl } = pres;
-        return <Book key={pres.id} pres={pres}></Book>;
+        return <Book key={pres.id} {...pres}></Book>;
       })
       }
     </div>
