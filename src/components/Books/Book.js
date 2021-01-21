@@ -12,13 +12,17 @@ function Book(pips) {
 
   //console.log(pips);
   return (
-    <div className='book' onMouseOver={()=>{
-      console.log(title);
-    }}>
+    <div className='book' >
       <h3 onClick={()=>console.log(title)}>{title}</h3>
       <h5>is from {origin}</h5>
       <img src={imgUrl} alt='' />
-      <button type='button' onClick={clickHandler}> {/* for functions that are invocked immediately, arrow functions should be used. */}
+      <button 
+        type='button' 
+        onClick={clickHandler}
+        onMouseOver={()=>{
+          console.log('click for '+title);
+        }}
+      > {/* for functions that are invocked immediately, arrow functions should be used. */}
         Agree
       </button>
     </div >
