@@ -11,7 +11,7 @@ function Book(pips) {
   //console.log(pips);
   return (
     <div className='book'>
-      <h3>{title}</h3>
+      <h3 onClick={()=>console.log(title)}>{title}</h3>
       <h5>is from {origin}</h5>
       <img src={imgUrl} alt='' />
       <button type='button' onClick={clickHandler}>
