@@ -4,15 +4,34 @@ import { presenters } from './Presenters';
 const UseStateArray = () => {
 
   const [nominees, setNominees] = React.useState(presenters);
+
+  const removeItem = (id) => {
+    let newNominees = nominees.filter((nominee) => nominee.id !== id);
+    setNominees(newNominees);
+  }
   
   return (
     <React.Fragment>
       {
         nominees.map((nominee)=>{
           const {id, title} = nominee;
-          return(<h4 key={id}>{title}</h4>)
+          return(
+            <div>
+              <h4 key={id}>{title}</h4>
+              <button
+                onClick={()=>removeItem(id)}
+              >Remove</button>
+            </div>
+          )
         })
       }
+
+      <button
+        className='btn'
+        onClick={() => setNominees([])}
+      >
+        Delete All
+      </button>
       
     </React.Fragment>
   )
