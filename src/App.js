@@ -5,6 +5,7 @@ import './index.css';
 import Header from './components/Header';
 import Books from './components/Books/Books';
 import UseStateBasics from './components/1-useState/useStateBasics';
+import UseStateArray from './components/1-useState/UseStateArray';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -14,7 +15,8 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <UseStateBasics />
+        <UseStateArray />
+     
       </div>
 
     );
