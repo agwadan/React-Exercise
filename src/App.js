@@ -3,9 +3,7 @@ import React from 'react';
 //import './App.css';
 import './index.css';
 import Header from './components/Header';
-import Books from './components/Books/Books';
-import UseStateObject from './components/1-useState/UseStateObject';
-import UseStateCounter from './components/1-useState/UseStateCounter';
+import UseEffectBasics from './components/2-useEffect/UseEffectBasics';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -15,7 +13,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <UseStateCounter />
+        <UseEffectBasics />
      
       </div>
 
