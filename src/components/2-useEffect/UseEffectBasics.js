@@ -1,11 +1,27 @@
-import React , {useEffect} from 'react';
+//----useEffect runs after every render-------
+
+import React, { useState, useEffect } from 'react';
 
 const UseEffectBasics = () => {
-    return(
-        <h3>
-            Use Effect
-        </h3>
-    )
+
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    console.log('call UseEffect');
+
+    if (value > 0) {
+      document.title = `New Messages(${value})`
+    }
+  });
+
+  console.log('render component');
+
+  return (
+    <div>
+      <h1>{value}</h1>
+      <button className='btn' onClick={() => setValue(value + 1)}>Change Value</button>
+    </div>
+  )
 }
 
 export default UseEffectBasics;
