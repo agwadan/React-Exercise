@@ -23,9 +23,6 @@ const TimeOfDay = () => {
         styles.color = "pink"
     }
 
-
-    
-
     return(
     <h1 style={styles}>Good {time}</h1>
     )

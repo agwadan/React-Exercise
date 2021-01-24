@@ -3,7 +3,7 @@ import React from 'react';
 //import './App.css';
 import './index.css';
 import Header from './components/Header';
-import UseEffectCleanUp from './components/2-useEffect/UseEffectCleanUp';
+import UseEffectFetchData from './components/2-useEffect/UseEffectFetchData';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <UseEffectCleanUp />
+        <UseEffectFetchData />
      
       </div>
 
