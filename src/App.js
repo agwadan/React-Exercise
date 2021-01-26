@@ -4,7 +4,7 @@ import React from 'react';
 import './index.css';
 import './App.css';
 import Header from './components/Header.jsx';
-import ShortCircuit from './components/3-conditionalRendering/ShortCircuit';
+import ShowHide from './components/3-conditionalRendering/ShowHide';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <ShortCircuit/>
+        <ShowHide />
       </div>
 
     );
