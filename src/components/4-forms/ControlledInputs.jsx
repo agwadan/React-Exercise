@@ -4,10 +4,16 @@ export default function ControlledInputs() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [people, setPeople] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name + ' ' + email);
+    if (name && email) {
+      const person = { name: name, email: email };
+      console.log(person);
+    } else {
+      console.log('empty form :-(');
+    }
   }
 
   return (
