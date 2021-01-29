@@ -9,7 +9,16 @@ export default function ControlledInputs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name && email) {
-      const person = { name: name, email: email };
+      const person = {
+        id: new Date().getTime().toString(),
+        name: name,
+        email: email
+      };
+      setPeople(() => {
+        return (
+          [...people, person]
+        )
+      })
       console.log(person);
     } else {
       console.log('empty form :-(');
@@ -45,6 +54,15 @@ export default function ControlledInputs() {
 
           <button className=' btn btn-primary' type='submit'>Add Person</button>
         </form>
+
+        {people.map((person) => {
+          const { id, name, email } = person;
+          return (<div className='item' key={id}>
+            <h4>{name}</h4>
+            <p>{email}</p>
+          </div>)
+        })}
+
       </article >
     </div >
   )
