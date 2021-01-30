@@ -21,7 +21,19 @@ export default function MultipleInputs() {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    if (person.name && person.email && person.age) {
+      const newPerson = {
+        ...person,
+        id: new Date().getTime().toString()
+      }
+      setPeople([...people, newPerson]);
+      setPerson({
+        name: '',
+        email: '',
+        age: ''
+      })
+    }
   }
 
   return (
@@ -66,10 +78,11 @@ export default function MultipleInputs() {
         </form>
 
         {people.map((person) => {
-          const { id, name, email } = person;
+          const { id, name, email, age } = person;
           return (<div className='item' key={id}>
             <h4>{name}</h4>
             <p>{email}</p>
+            <p>{age}</p>
           </div>)
         })}
 
