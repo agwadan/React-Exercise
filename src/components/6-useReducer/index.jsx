@@ -4,23 +4,34 @@ import { data } from '../../data';
 
 const reducer = (state, action) => {
 
+  console.log(state);
+  if (action.type === 'TESTING') {
+
+    return {
+      ...state,
+      people: data,
+      isModalOpen: true,
+      modalContent: 'item added'
+    }
+  }
+  return state;
 }
 
 const defaultState = {
   people: [],
   isModalOpen: false,
-  modalContent: 'hello world'
+  modalContent: ''
 }
 
 const Index = () => {
 
   const [name, setName] = useState('');
-  const [state, dispatch] = useReducer(reducer, defaultState);
+  const [state, dispatch] = useReducer(reducer, defaultState); //--------- Helps to make all changes at once after dispatch has been called.
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-
+      dispatch({ type: 'TESTING' })
     } else {
 
     }
@@ -28,7 +39,7 @@ const Index = () => {
 
   return (
     <div>
-      {state.isModalOpen && <Modal />}
+      {state.isModalOpen && <Modal modalContent={state.modalContent} />}
 
       <form onSubmit={handleSubmit} className='form'>
         <div className='form-group'>

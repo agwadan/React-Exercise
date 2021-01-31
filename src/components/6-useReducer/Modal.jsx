@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Modal() {
+export default function Modal({ modalContent }) {
   return (
-    <div>
-      <h5>I am a modal :-)</h5>
+    <div className='modal'>
+      <h5>{modalContent}</h5>
     </div>
   )
 }
