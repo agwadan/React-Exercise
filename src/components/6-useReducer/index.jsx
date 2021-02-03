@@ -31,6 +31,11 @@ const reducer = (state, action) => {
   if (action.type === 'CLOSE_MODAL') {
     return { ...state, isModalOpen: false };
   }
+
+  if (action.type === 'REMOVE_ITEM') {
+    const newPeople = state.people.filter((person) => person.id !== action.payLoad);
+    return { ...state, people: newPeople }
+  }
   throw new Error('No matching action type');
 }
 
@@ -39,9 +44,6 @@ const defaultState = {
   isModalOpen: false,
   modalContent: 'hey :-)'
 }
-
-
-
 
 //                    START OF THE COMPONENT
 //_______________________________________________________________________
@@ -63,7 +65,7 @@ const Index = () => {
   }
 
   const closeModal = () => {
-    dispatch({ type: 'CLOSE_MODAL' })
+    dispatch({ type: 'CLOSE_MODAL' });
   }
 
   return (
@@ -79,8 +81,13 @@ const Index = () => {
 
       {state.people.map((person) => {
         return (
-          <div key={person.id}>
+          <div key={person.id} className='li'>
             <h4>{person.name}</h4>
+            <button
+              className='btn btn-danger'
+              onClick={() => dispatch({ type: 'REMOVE_ITEM', payLoad: person.id })}>
+              Remove Person
+            </button>
           </div>);
       })}
 
