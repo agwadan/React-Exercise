@@ -4,36 +4,44 @@ import { data } from '../../data';
 
 const reducer = (state, action) => {
 
-  console.log(state);
-  if (action.type === 'TESTING') {
+  console.log(state, action);
+  if (action.type === 'ADD_ITEM') {
 
+    const newPeople = [
+      ...state.people,
+      action.payLoad
+    ]
     return {
       ...state,
-      people: data,
+      people: newPeople,
       isModalOpen: true,
       modalContent: 'item added'
     }
   }
-  return state;
+  throw new Error('No matching action type');
 }
 
 const defaultState = {
   people: [],
   isModalOpen: false,
-  modalContent: ''
+  modalContent: 'hey :-)'
 }
+
+//                    START OF THE COMPONENT
+//_______________________________________________________________________
 
 const Index = () => {
 
   const [name, setName] = useState('');
-  const [state, dispatch] = useReducer(reducer, defaultState); //--------- Helps to make all changes at once after dispatch has been called.
+  const [state, dispatch] = useReducer(reducer, defaultState); //------------------ Helps to make all changes at once after dispatch has been called.
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      dispatch({ type: 'TESTING' })
+      const newItem = { id: new Date().getTime().toString(), name }
+      dispatch({ type: 'ADD_ITEM', payLoad: newItem });
     } else {
-
+      dispatch({ type: 'RANDOM' });
     }
   }
 
