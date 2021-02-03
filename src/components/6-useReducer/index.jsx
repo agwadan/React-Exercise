@@ -16,7 +16,16 @@ const reducer = (state, action) => {
       people: newPeople,
       isModalOpen: true,
       modalContent: 'item added'
-    }
+    };
+  }
+
+  if (action.type === 'NO_VALUE') {
+    console.log('Please enter a value');
+    return {
+      ...state,
+      isModalOpen: true,
+      modalContent: 'Please enter a name'
+    };
   }
   throw new Error('No matching action type');
 }
@@ -40,8 +49,9 @@ const Index = () => {
     if (name) {
       const newItem = { id: new Date().getTime().toString(), name }
       dispatch({ type: 'ADD_ITEM', payLoad: newItem });
+      setName('');
     } else {
-      dispatch({ type: 'RANDOM' });
+      dispatch({ type: 'NO_VALUE' });
     }
   }
 
