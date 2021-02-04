@@ -9,7 +9,7 @@ const Modal = ({ modalContent, closeModal }) => {
   })
 
   return (
-    <div>
+    <div className='modal-dialog modal-body'>
       <h5>{modalContent}</h5>
     </div>
   )
