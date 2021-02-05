@@ -14,8 +14,8 @@ const ContextAPI = () => {
   const [people, setPeople] = useState(data);
 
   const removePerson = (id) => {
+    setPeople(people.filter((person) => person.id !== id))
 
-    return people.filter((person) => person.id !== id)
   };
   return (
     <PersonContext.Provider value={{ removePerson }}> {/* -------------------------------- Context.Provider wraps the entire component tree. */}
