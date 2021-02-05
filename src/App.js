@@ -5,8 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import './App.css';
 import Header from './components/Header.jsx';
-//import PropDrilling from './components/7-propDrilling/PropDrilling';
-import Index from './components/6-useReducer';
+import ContextAPI from './components/8-useContext/ContextAPI';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -15,7 +14,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <Index />
+        <ContextAPI />
       </div>
 
     );

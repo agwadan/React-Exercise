@@ -10,7 +10,9 @@ export const data = [
   {
     id: 4411,
     name: 'Matthew'
+  },
+  {
+    id: 243,
+    name: 'Daudi'
   }
 ]
-
-//module.exports = data;
