@@ -19,7 +19,9 @@ const UseStateArray = () => {
             <div>
               <h4 key={id}>{title}</h4>
               <button
+                className='btn btn-primary'
                 onClick={() => removeItem(id)}
+                style={{ marginBottom: '2rem' }}
               >Remove</button>
             </div>
           )
@@ -27,8 +29,9 @@ const UseStateArray = () => {
       }
 
       <button
-        className='btn'
+        className='btn btn-danger'
         onClick={() => setNominees([])}
+        style={{ marginTop: '2rem' }}
       >
         Delete All
       </button>
