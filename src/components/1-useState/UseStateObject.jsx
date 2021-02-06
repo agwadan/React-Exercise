@@ -9,12 +9,12 @@ const UseStateObject = () => {
     age: '44',
   });
 
-const changeMessage = () =>{
-  setNominee({
-    ...nominee, /* using the spread operator. */
-    name : 'Jeremy Clarkson'
-  })
-}
+  const changeMessage = () => {
+    setNominee({
+      ...nominee, /* using the spread operator. */
+      name: 'Jeremy Clarkson'
+    })
+  }
 
   console.log(nominee);
 

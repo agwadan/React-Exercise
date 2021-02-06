@@ -1,12 +1,12 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 
 const UseStateBasics = () => {
-    const [name , setName] = useState('Agwa');
+    const [name, setName] = useState('Agwa');
 
     const handleClick = () => {
         setName('Clarkson');
     }
-    return(
+    return (
         <React.Fragment>
             <h2>{name}</h2>
             <button

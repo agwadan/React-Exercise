@@ -9,17 +9,17 @@ const UseStateArray = () => {
     let newNominees = nominees.filter((nominee) => nominee.id !== id);
     setNominees(newNominees);
   }
-  
+
   return (
     <React.Fragment>
       {
-        nominees.map((nominee)=>{
-          const {id, title} = nominee;
-          return(
+        nominees.map((nominee) => {
+          const { id, title } = nominee;
+          return (
             <div>
               <h4 key={id}>{title}</h4>
               <button
-                onClick={()=>removeItem(id)}
+                onClick={() => removeItem(id)}
               >Remove</button>
             </div>
           )
@@ -32,7 +32,7 @@ const UseStateArray = () => {
       >
         Delete All
       </button>
-      
+
     </React.Fragment>
   )
 }

@@ -37,7 +37,7 @@ const UseStateCounter = () => {
       }>
         <h2>Complex Counter</h2>
         <h1>{value}</h1>
-        <button onClick={()=>complexIncrease()} >Change Value</button>
+        <button onClick={() => complexIncrease()} >Change Value</button>
       </section>
     </div>
   );
