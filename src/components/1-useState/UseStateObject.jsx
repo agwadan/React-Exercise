@@ -22,7 +22,9 @@ const UseStateObject = () => {
     <div className='details'>
       <h3>{nominee.name}</h3>
       <h4>{nominee.age}</h4>
-      <button onClick={() => changeMessage()}>change name</button>
+      <button type='button' className='btn btn-labeled btn-success ' onClick={() => changeMessage()}>
+        change name
+      </button>
     </div>
   )
 }
