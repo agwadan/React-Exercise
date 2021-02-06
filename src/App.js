@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import './App.css';
 import Header from './components/Header.jsx';
-import UseStateObject from './components/1-useState/useStateObject';
+import UseStateCounter from './components/1-useState/useStateCounter';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <UseStateObject />
+        <UseStateCounter />
       </div>
 
     );

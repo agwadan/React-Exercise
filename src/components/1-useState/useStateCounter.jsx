@@ -23,9 +23,9 @@ const UseStateCounter = () => {
       }>
         <h2>Counter</h2>
         <h1>{value}</h1>
-        <button onClick={() => setValue(value - 1)} >decrease</button>
-        <button onClick={() => setValue(0)}>Reset</button>
-        <button onClick={() => setValue(value + 1)}>increase</button>
+        <button className='btn btn-danger' onClick={() => setValue(value - 1)} style={{ marginRight: '1rem' }}>decrease</button>
+        <button className='btn btn-primary' onClick={() => setValue(0)} style={{ marginRight: '1rem' }}>Reset</button>
+        <button className='btn btn-success' onClick={() => setValue(value + 1)} style={{ marginRight: '1rem' }}>increase</button>
       </section>
 
       <section style={{
@@ -37,7 +37,7 @@ const UseStateCounter = () => {
       }>
         <h2>Complex Counter</h2>
         <h1>{value}</h1>
-        <button onClick={() => complexIncrease()} >Change Value</button>
+        <button className='btn btn-primary' onClick={() => complexIncrease()} >Change Value</button>
       </section>
     </div>
   );

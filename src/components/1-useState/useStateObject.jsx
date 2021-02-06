@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { presenters } from './Presenters';
-import './UseStateObject.css';
 
 const UseStateObject = () => {
 
