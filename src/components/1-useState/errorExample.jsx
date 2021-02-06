@@ -14,7 +14,7 @@ const ErrorExample = () => {
       <h2>Agwa</h2>
       <button
         type='button'
-        className='btn'
+        className='btn btn-success'
         onClick={handleClick}
       >
         Change Name
