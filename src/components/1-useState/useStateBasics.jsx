@@ -10,7 +10,7 @@ const UseStateBasics = () => {
         <React.Fragment>
             <h2>{name}</h2>
             <button
-                className='btn'
+                className='btn btn-primary'
                 onClick={handleClick}
             >
                 Change Name

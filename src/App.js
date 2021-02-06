@@ -6,6 +6,7 @@ import './index.css';
 import './App.css';
 import Header from './components/Header.jsx';
 import UseStateCounter from './components/1-useState/useStateCounter';
+import UseStateBasics from './components/1-useState/useStateBasics';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -14,7 +15,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <UseStateCounter />
+        <UseStateBasics />
       </div>
 
     );
