@@ -4,9 +4,16 @@ import PropTypes from 'prop-types';
 const User = ({ login, avatar_url }) => {
   return (
 
-    <article>
+    <article style={{ background: '#ffffd1', marginBottom: '5px' }}>
       <h4>{login}</h4>
-      <img src={avatar_url} alt={login} />
+      <img
+        src={avatar_url}
+        alt={login}
+        className='img-rounded'
+        height='150'
+        width='130'
+        style={{ marginBottom: '12px' }}
+      />
     </article>
 
   );
