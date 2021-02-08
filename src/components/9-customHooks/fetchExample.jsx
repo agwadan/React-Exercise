@@ -1,22 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useFetch } from './useFetch';
 
 const url = 'https://covid19.mathdro.id/api';
 
 const FetchExample = () => {
-
-  const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState([]);
-
-  const getProducts = async () => {
-    const res = await fetch(url);
-    const products = await res.json();
-    setProducts(products);
-    setLoading(false);
-  }
-
-  useEffect(() => {
-    getProducts();
-  }, []);
+  const { loading, products } = useFetch(url);
   console.log(products);
 
   return (
