@@ -7,6 +7,7 @@ const url = 'https://api.github.com/users';
 const Setup = () => {
 
   const { users } = useFetch(url);
+  console.log(users);
 
   return (
     <div>
@@ -14,7 +15,7 @@ const Setup = () => {
       <section>
         {
           users.map((user) => {
-            return <User key={user.id} {...users} />
+            return <User key={user.node_id} {...user} />
           })
         }
       </section>
