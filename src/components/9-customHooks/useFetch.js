@@ -1,20 +1,23 @@
+
+//Custom Hooks must begin with the word "use" e.g "useFetch"
+
 import { useState, useEffect } from 'react';
 
 export const useFetch = (url) => {
 
   const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState([]);
+  const [cases, setCases] = useState([]);
 
-  const getProducts = async () => {
+  const getCases = async () => {
     const res = await fetch(url);
-    const products = await res.json();
-    setProducts(products);
+    const cases = await res.json();
+    setCases(cases);
     setLoading(false);
   }
 
   useEffect(() => {
-    getProducts();
+    getCases();
   }, [url]);
 
-  return { loading, products }
+  return { loading, cases }
 }

@@ -4,8 +4,8 @@ import { useFetch } from './useFetch';
 const url = 'https://covid19.mathdro.id/api';
 
 const FetchExample = () => {
-  const { loading, products } = useFetch(url);
-  console.log(products);
+  const { loading, cases } = useFetch(url);
+  console.log(cases);
 
   return (
     <div>
