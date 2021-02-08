@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import './App.css';
 import Header from './components/Header.jsx';
-import Setup from './components/10-propTypes';
+import Setup from './components/11-react-router';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
