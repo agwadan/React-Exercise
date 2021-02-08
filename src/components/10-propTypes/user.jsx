@@ -2,18 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const User = ({ login, avatar_url }) => {
+
+  const imgUrl = avatar_url && avatar_url; //---- if it has the image url, return it else... chill
+
   return (
 
-    <article style={{ background: '#ffffd1', marginBottom: '5px' }}>
-      <h4>{login}</h4>
+    <article className='jumbotron' style={
+      {
+        margin: 'auto',
+        marginBottom: '5px',
+        width: '50%'
+      }}>
+
       <img
-        src={avatar_url}
+        src={avatar_url || 'https://avatars.githubusercontent.com/u/1?v=4'}
         alt={login}
-        className='img-rounded'
+        className='rounded'
         height='150'
         width='130'
         style={{ marginBottom: '12px' }}
       />
+      <h4>{login}</h4>
+      <p>This github user is such an awesome person. This github user is such an awesome person. </p>
     </article>
 
   );
