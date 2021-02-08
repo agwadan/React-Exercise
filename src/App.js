@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import './App.css';
 import Header from './components/Header.jsx';
-import FetchExample from './components/9-customHooks/fetchExample';
+import Setup from './components/10-propTypes';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <FetchExample />
+        <Setup />
       </div>
 
     );

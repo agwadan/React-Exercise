@@ -6,12 +6,12 @@ import { useState, useEffect } from 'react';
 export const useFetch = (url) => {
 
   const [loading, setLoading] = useState(true);
-  const [cases, setCases] = useState([]);
+  const [users, setUsers] = useState([]);
 
   const getCases = async () => {
     const res = await fetch(url);
-    const cases = await res.json();
-    setCases(cases);
+    const users = await res.json();
+    setUsers(users);
     setLoading(false);
   }
 
@@ -19,5 +19,5 @@ export const useFetch = (url) => {
     getCases();
   }, [url]);
 
-  return { loading, cases }
+  return { loading, users }
 }
