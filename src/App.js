@@ -6,8 +6,6 @@ import './index.css';
 import './App.css';
 //import Nav from './components/navbar.jsx';
 import ReactRouterSetup from './components/11-react-router';
-
-//import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
 
   render() {

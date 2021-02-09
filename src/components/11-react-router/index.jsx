@@ -5,6 +5,8 @@ import About from './about';
 import ErrorPage from './error';
 import Home from './home';
 import Navbar from '../navbar';
+import User from '../10-propTypes/user';
+import Person from './person';
 
 const ReactRouterSetup = () => {
   return (
@@ -19,6 +21,9 @@ const ReactRouterSetup = () => {
         </Route>
         <Route path='/people'>
           <Setup />
+        </Route>
+        <Route path='/person/:id' children={<Person />}>
+
         </Route>
         <Route path='*'>
           <ErrorPage />

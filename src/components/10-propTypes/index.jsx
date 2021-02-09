@@ -7,7 +7,7 @@ const url = 'https://api.github.com/users';
 const Setup = () => {
 
   const { users } = useFetch(url);
-  console.log(users);
+  //console.log(users);
 
   return (
     <div>

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const User = ({ login, avatar_url }) => {
+const User = ({ id, node_id, login, avatar_url }) => {
 
   const imgUrl = avatar_url && avatar_url; //---- if it has the image url, return it else... chill
 
@@ -24,6 +25,7 @@ const User = ({ login, avatar_url }) => {
       />
       <h4>{login}</h4>
       <p>This github user is such an awesome person. This github user is such an awesome person. </p>
+      <Link to={`/person/${id}`}>Learn More</Link>
     </article>
 
   );
