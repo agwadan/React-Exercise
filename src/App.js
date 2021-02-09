@@ -4,8 +4,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './App.css';
-import Header from './components/Header.jsx';
-import Setup from './components/11-react-router';
+//import Nav from './components/navbar.jsx';
+import ReactRouterSetup from './components/11-react-router';
 
 //import styles from './App.module.css'; //----------------------------------------------------- Styling for the app.
 class App extends React.Component {
@@ -13,8 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='container'>
-        <Header />
-        <Setup />
+        <ReactRouterSetup />
       </div>
 
     );

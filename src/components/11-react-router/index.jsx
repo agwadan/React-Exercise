@@ -4,13 +4,13 @@ import Setup from '../10-propTypes';
 import About from './about';
 import ErrorPage from './error';
 import Home from './home';
+import Navbar from '../navbar';
 
 const ReactRouterSetup = () => {
   return (
     <Router>
+      <Navbar />
       <Switch>
-
-
         <Route exact path='/'> {/* Exact ensures this route is accessed if the path matches exaclty what is in the path property. */}
           <Home />
         </Route>
@@ -24,7 +24,6 @@ const ReactRouterSetup = () => {
           <ErrorPage />
         </Route>
       </Switch>
-      React Router
     </Router>
   )
 }
