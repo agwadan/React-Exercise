@@ -11,8 +11,9 @@ const MemoIndex = () => {
   return (
     <div>
       <h1>Count: {count}</h1>
-      <button className='btn btn-primary' onClick={() => setCount(count + 1)}>Count Up</button>
-    </div>
+      <button className='btn btn-primary btn-lg' onClick={() => setCount(count + 1)}> <span class="fa fa-star"
+        aria-hidden="true"> </span>Count Up</button>
+    </div >
   )
 }
 
