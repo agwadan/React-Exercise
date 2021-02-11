@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useFetch } from '../9-customHooks/useFetch';
 
-const url = 'https://api.github.com/users'
+const url = 'https://api.github.com/users';
 
 const MemoIndex = () => {
 
@@ -10,7 +10,6 @@ const MemoIndex = () => {
 
   return (
     <div
-      className='jumbotron'
       style={{ marginTop: '4rem', alignItems: 'center' }}
     >
       <h1>Count: {count}</h1>
@@ -28,11 +27,23 @@ const BigList = ({ users }) => {
       {
         users.map((user) => {
           return (
-            <h4>Big List</h4>
+            <SingleProduct key={user.id} {...user}></SingleProduct>
           )
         })
       }
     </section>
+  )
+}
+
+const SingleProduct = ({ login, avatar_url }) => {
+  return (
+    <article className='jumbotron' style={{ marginTop: '4rem' }}>
+      <img className='rounded' src={avatar_url} alt={login} className='rounded'
+        height='150'
+        width='130'
+        style={{ marginBottom: '9px' }} />
+      <h4>{login}</h4>
+    </article>
   )
 }
 
