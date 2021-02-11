@@ -5,6 +5,18 @@ import { useFetch } from '../9-customHooks/useFetch';
 
 const url = 'https://api.github.com/users';
 
+const calculateBiggestId = (data) => {
+  return (
+    data.reduce((total, person) => {
+      const id = person.id;
+      if (id >= total) {
+        person = id;
+      }
+      return total;
+    }, 0)
+  )
+}
+
 const MemoIndex = () => {
 
   const { users } = useFetch(url);
@@ -17,6 +29,8 @@ const MemoIndex = () => {
     setCart(cart + 1);
   }, [cart]);
 
+  const biggestId = useMemo(() => calculateBiggestId(users), [users]);
+
   return (
     <div
       style={{ marginTop: '4rem', alignItems: 'center' }}
@@ -25,6 +39,7 @@ const MemoIndex = () => {
       <button className='btn btn-primary btn-lg' onClick={() => setCount(count + 1)}>Count Up</button>
       <h3 style={{ marginTop: '3rem' }}> Cart Value: {cart}</h3>
 
+      <h2>Longest Name: {biggestId}</h2>
       <BigList users={users} addToCart={addToCart} />
 
     </div >
