@@ -9,11 +9,30 @@ const MemoIndex = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div
+      className='jumbotron'
+      style={{ marginTop: '4rem', alignItems: 'center' }}
+    >
       <h1>Count: {count}</h1>
-      <button className='btn btn-primary btn-lg' onClick={() => setCount(count + 1)}> <span class="fa fa-star"
-        aria-hidden="true"> </span>Count Up</button>
+      <button className='btn btn-primary btn-lg' onClick={() => setCount(count + 1)}>Count Up</button>
+
+      <BigList users={users} />
+
     </div >
+  )
+}
+
+const BigList = ({ users }) => {
+  return (
+    <section>
+      {
+        users.map((user) => {
+          return (
+            <h4>Big List</h4>
+          )
+        })
+      }
+    </section>
   )
 }
 
