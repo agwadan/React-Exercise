@@ -21,7 +21,14 @@ const MemoIndex = () => {
   )
 }
 
-const BigList = ({ users }) => {
+
+/* react.memo checks if the value of the props changed... if it didn't it prevents a re-render */
+const BigList = React.memo(({ users }) => {
+
+  useEffect(() => {
+    console.log('biglist called');
+  })
+
   return (
     <section>
       {
@@ -33,9 +40,13 @@ const BigList = ({ users }) => {
       }
     </section>
   )
-}
+});
 
 const SingleProduct = ({ login, avatar_url }) => {
+
+  useEffect(() => {
+    console.count('single Item called');
+  })
   return (
     <article className='jumbotron' style={{ marginTop: '4rem' }}>
       <img className='rounded' src={avatar_url} alt={login} className='rounded'
