@@ -7,12 +7,14 @@ import './App.css';
 //import Nav from './components/navbar.jsx';
 import ReactRouterSetup from './components/11-react-router';
 import MemoIndex from './components/12-memoUseMemoUseCallback';
+import ErrorExample from './components/1-useState/errorExample';
+import IndexPage from './components/13-stylingWithCss';
 class App extends React.Component {
 
   render() {
     return (
       <div className='container'>
-        <MemoIndex />
+        <IndexPage />
       </div>
 
     );
