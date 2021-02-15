@@ -2,6 +2,10 @@ div{
   float: left;
 }
 
+h1{
+  font-size: 50px;
+}
+
 #box1{
   position: relative;
   margin-left: -500px;
@@ -12,7 +16,7 @@ div{
   border: 2px solid;
   color: aliceblue;
   border-radius: 2000px;
-  background-color: brown;
+  background-color: rgb(160, 83, 11);
   text-align: center;
 }
 
@@ -36,3 +40,4 @@ div{
   padding: 20px;
   clear: both;
 }
+
