@@ -3,15 +3,15 @@ div{
 }
 
 #box1{
-position: relative;
-  margin-left: -200px;
-margin-top: px;
- /* padding: 30%; */
-  width: 1000px;
-  height: 500px;
+  position: relative;
+  margin-left: -500px;
+  margin-top: -2px;
+ padding: 30%; 
+  width: 1200px;
+  height: 1000px;
   border: 2px solid;
   color: aliceblue;
-  border-radius: 45px;
+  border-radius: 2000px;
   background-color: brown;
   text-align: center;
 }
@@ -22,6 +22,17 @@ margin-top: px;
   padding: 10px;
   border: 2px solid rgb(0, 217, 255);
   width: 100px;
-  height: 100px;
-  overflow: scroll;
+  height: 200px;
+  border-radius: 20px;
+  
+}
+
+.paragraph-container{
+  background-color: rgb(228, 240, 240);
+  border-radius: 10px;
+}
+
+.paragraph{
+  padding: 20px;
+  clear: both;
 }
