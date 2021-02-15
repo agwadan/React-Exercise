@@ -1,6 +1,11 @@
-#box1{
-  margin-left: -200px;
+div{
+  float: left;
+}
 
+#box1{
+position: relative;
+  margin-left: -200px;
+margin-top: px;
  /* padding: 30%; */
   width: 1000px;
   height: 500px;
@@ -12,6 +17,7 @@
 }
 
 #box2{
+  position: relative;
   margin: 20px;
   padding: 10px;
   border: 2px solid rgb(0, 217, 255);
