@@ -18,6 +18,7 @@ h1{
   border-radius: 2000px;
   background-color: rgb(160, 83, 11);
   text-align: center;
+  overflow: hidden;
 }
 
 #box2{
