@@ -1,0 +1,18 @@
+{
+  "ideal": {
+    "name": "Agwa",
+    "age": "54",
+    "contact": {
+      "emailAddress": "agwa.dan@gmail.com",
+      "phoneNumber": "07644556644"
+    }
+  },
+  "unideal": {
+    "name": "Peter",
+    "Age": "45",
+    "Contact": {
+      "Emailaddress": "peter@gmail.com",
+      "PhoneNumber": "07644556644"
+    }
+  }
+}
