@@ -10,7 +10,7 @@ h1{
   position: relative;
   margin-left: -500px;
   margin-top: -2px;
- padding: 30%; 
+  padding: 30%; 
   width: 1200px;
   height: 1000px;
   border: 2px solid;
@@ -42,3 +42,19 @@ h1{
   clear: both;
 }
 
+/*-------------------PSEUDO SELECTORS------------*/
+/*Applying a hover  pseudoselector*/
+h1:hover{
+  color: #bbb3b3;
+  
+}
+li:first-child{
+  color: aquamarine;
+}
+li:last-child{
+  color: beige;
+}
+
+li:nth-child(2){
+  color: #79af47;
+}

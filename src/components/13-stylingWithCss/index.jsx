@@ -12,6 +12,12 @@ export default function IndexPage() {
         jdclkasjd ckasj cnkas djvcn ksa mc nlkasd jn skajd fhadlc vkas j
       cnl ka jshvn aclaks jdclkasjd ckasj cnkas djvcn ksa mc nlkasdjn</p>
       </div>
+      <h2>List</h2>
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ul>
     </div>
 
   )
