@@ -43,7 +43,6 @@ h1{
 }
 
 /*-------------------PSEUDO SELECTORS------------*/
-/*Applying a hover  pseudoselector*/
 h1:hover{
   color: #bbb3b3;
   
@@ -57,4 +56,16 @@ li:last-child{
 
 li:nth-child(2){
   color: #79af47;
+}
+
+li:only-child{ /* takes effect if there's a list with only one child */
+  color: aqua;
+}
+
+#google-link:link{
+  color: #79af47;
+}
+
+#google-link:visited{
+  color: black;
 }

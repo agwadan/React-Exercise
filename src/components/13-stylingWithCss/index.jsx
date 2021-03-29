@@ -18,6 +18,7 @@ export default function IndexPage() {
         <li>Second</li>
         <li>Third</li>
       </ul>
+      <a href='www.google.com' id='google-link'>Click Me</a>
     </div>
 
   )
