@@ -6,6 +6,11 @@ h1{
   font-size: 50px;
 }
 
+h2{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 #box1{
   position: relative;
   margin-left: -500px;
@@ -68,4 +73,20 @@ li:only-child{ /* takes effect if there's a list with only one child */
 
 #google-link:visited{
   color: black;
+}
+
+/* ---------ADVANCED SELECTORS---------------------- */
+h2 + p{ 
+  /* 
+  --> Changes the color of every paragraph that follows an h2
+  */
+  color: #79af47;
+}
+
+textarea ~ button {
+  /* 
+  --> Changes the color of every paragraph that follows an h2
+  --> The two elements should have the same parent div
+  */
+  color: aqua;
 }
