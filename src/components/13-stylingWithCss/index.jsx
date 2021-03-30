@@ -36,6 +36,7 @@ export default function IndexPage() {
 
       <img src='../img/Brakes1.jpg' />
       <img src='../img/EngineBlock1.jpg' />
+      <img src='../img/Rims1.jpeg' />
     </div>
 
   )
