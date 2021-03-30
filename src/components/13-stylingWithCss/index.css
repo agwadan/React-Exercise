@@ -112,6 +112,12 @@ margin-left: 30px;
 margin-bottom: 50px;
 }
 
-img[src$="Rims1.jpeg"]{
+img[src$="Rims1.jpeg"]{/* 
+  --> Selects images with src ending with "Rims.jpeg" */
 border: 10px solid pink;
+}
+
+img[src*="img"]{/* 
+  --> Selects images with src containing "img" anywhere */
+  border-radius: 20px;
 }
