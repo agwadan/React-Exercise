@@ -4,7 +4,7 @@ import './index.css';
 export default function IndexPage() {
   return (
     <div>
-      <div id='box1'><h1><b>CSS</b> box 1</h1></div>
+      {/*    <div id='box1'><h1><b>CSS</b> box 1</h1></div> */}
       <div id='box2'>CSS box 2 CSS box 2 CSS box 2 </div>
       <div class='paragraph-container'>
         <h2>A paragraph</h2>
@@ -34,6 +34,8 @@ export default function IndexPage() {
         <li>Nne</li>
       </ol>
 
+      <img src='../img/Brakes1.jpg' />
+      <img src='../img/EngineBlock1.jpg' />
     </div>
 
   )
