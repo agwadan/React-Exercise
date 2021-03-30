@@ -90,3 +90,14 @@ textarea ~ button {
   */
   color: aqua;
 }
+
+ul > li{ /* 
+  --> Child selectors: applies styling to all the child elements 
+  --> Only works for elements that are direct children*/
+ font-style: italic;
+}
+
+ol li{/* 
+  --> Descendant Selector: applies style to all elements under the ol */
+  font-style: italic;
+}

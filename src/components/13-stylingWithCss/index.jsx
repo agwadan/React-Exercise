@@ -27,6 +27,13 @@ export default function IndexPage() {
         <button>Submit</button>
       </form>
 
+      <ol>
+        <li>Moja</li>
+        <li>Mbili</li>
+        <li>Tatu</li>
+        <li>Nne</li>
+      </ol>
+
     </div>
 
   )
