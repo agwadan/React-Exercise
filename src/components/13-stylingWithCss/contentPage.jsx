@@ -3,7 +3,7 @@ import './contentPage.css';
 
 export const ContentPage = () => {
   return (
-    <div class="container-fluid">
+    <div class='body-content'>
       <h1 id='title'>My Page</h1>
 			<div class="row">	
 				<p class='para-text'> <span class="glyphicon glyphicon-film"></span>This page is entirely a test page.  I will just type what I feel like. this is just to really
