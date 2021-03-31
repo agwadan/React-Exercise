@@ -146,11 +146,7 @@ export const ContentPage = () => {
 		
 		<p>Don't mind this line a lot. <br/> It is just to test the new line thing.</p>
 
-		<div class="container">
-			<div class="jumbotron">
-				<span class="glyphicon glyphicon-film"></span>
-			</div>
-		</div>
+		<div class='service-image'></div>
 
 		
 		<p class='para-text'><strong>NOTICE:</strong> I wrote this line just to test the use of <b>"Strong"</b>. And to mention that you should

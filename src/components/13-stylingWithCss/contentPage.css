@@ -1,6 +1,19 @@
-.body-content{/* 
+.body-content{
+  background: rgba(204, 229, 255, 0.2);
+}
+
+.service-image{/* 
   --> background-color works, but is less flexible */
-  background: rgb(240, 248, 255);
+  /*  background: rgb(240, 248, 255); 
+      background-image: url("../../assets/img/Rims4.jpg");
+      background: url("../../assets/img/Rims4.jpg");
+      background-repeat: no-repeat; 
+      background-size: 400px 400px;*/
+  width: 500px;
+  height: 500px;
+  background: royalblue;
+  
+  
 }
 
 #title{
