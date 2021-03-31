@@ -146,8 +146,11 @@ export const ContentPage = () => {
 		
 		<p>Don't mind this line a lot. <br/> It is just to test the new line thing.</p>
 
-		<div class='service-image'></div>
-
+    <div class='container'>
+      <div class='service-image'></div>
+      <div class='service-image-1'></div>
+      <div class='service-image-2'></div>
+    </div>
 		
 		<p class='para-text'><strong>NOTICE:</strong> I wrote this line just to test the use of <b>"Strong"</b>. And to mention that you should
 		not change anything about this page. </p>

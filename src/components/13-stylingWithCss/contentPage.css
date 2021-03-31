@@ -12,8 +12,21 @@
   width: 500px;
   height: 500px;
   background: royalblue;
-  
-  
+  background: linear-gradient(to right top, rgb(0,0,255), rgba(0,0,255,0));
+}
+
+.service-image-1{
+  width: 500px;
+  height: 500px;
+  background: orange;
+  background: linear-gradient(160deg,orange, rgba(0,0,255,0));
+}
+
+.service-image-2{
+  width: 500px;
+  height: 500px;
+  background: orange;
+  background: linear-gradient(160deg,orange, rgba(0,0,255,0));
 }
 
 #title{
