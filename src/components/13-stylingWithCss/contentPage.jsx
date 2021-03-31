@@ -13,7 +13,7 @@ export const ContentPage = () => {
 				<p>For any more information, ask me personally.</p>
 
 			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
-				<h2>Text 1</h2>
+				<h2 class='subtitle'>Text 1</h2>
 				<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
 				
@@ -39,7 +39,7 @@ export const ContentPage = () => {
 			</div>
 
 			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
-				<h2>Text 3</h2>
+				<h2 class='subtitle'>Text 3</h2>
 				<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
 				
@@ -51,7 +51,7 @@ export const ContentPage = () => {
 			</div>
 
 			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
-				<h2>Text 4</h2>
+				<h2 class='subtitle'>Text 4</h2>
 				<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
 				
@@ -65,7 +65,7 @@ export const ContentPage = () => {
 
 			<div class="row">
 				<div>
-				<h2 id="dob">DOB</h2><small>Date Of Birth</small>
+				<h2 class='subtitle' id="dob">DOB</h2><small>Date Of Birth</small>
 				
 				<p class='para-text'>I, the designer of this web page, am <i><b>Daniel Agwa</b></i>. I was born on the <i><b>5<sup>th</sup>, November 1996</b></i>.</p>
 				
@@ -89,7 +89,7 @@ export const ContentPage = () => {
 		
 		<p class='para-text'>Below,   I will list all the schools I have attended from the time i started schooling;
 		
-		<h2 id="schools"><u>SCHOOLS ATTENDED</u></h2>
+		<h2 class='subtitle' id="schools"><u>SCHOOLS ATTENDED</u></h2>
 		
 		<ol>
 			<li class='list-item'>V & H Nursery School</li>
