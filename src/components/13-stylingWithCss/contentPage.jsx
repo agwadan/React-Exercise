@@ -12,7 +12,7 @@ export const ContentPage = () => {
 				<p>That is it about this page.</p>
 				<p>For any more information, ask me personally.</p>
 
-			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
+			<div>
 				<h2 class='subtitle'>Text 1</h2>
 				<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
@@ -24,21 +24,16 @@ export const ContentPage = () => {
 				<p class='para-text'>For any more information, ask me personally.</p>
 			</div>
 			
-			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
-				<h4><a class='link' href="#txt2" data-toggle = "collapse">Text 2</a></h4>
-				<div id="txt2" class="collapse">
+			<div>
+				<h2 class='subtitle'><a class='link' href="#txt2" data-toggle = "collapse">Text 2</a></h2>
+				<div id="txt2">
 					<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
-					occupy some space in the page and try to make the web page have some content. <br/>
-					
-					I first worked on this page on the <i><b>14<sup>th</sup>, August 2017</b></i>.</p>
-					
-					<p class='para-text'>That is it about this page.</p>
-				
-					<p class='para-text'>For any more information, ask me personally.</p>
+					occupy some space in the page and try to make the web page have some content. I first worked on this page on the <i><b>14<sup>th</sup>, August 2017</b></i>.</p>
+					That is it about this page.	For any more information, ask me personally.
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
+			<div>
 				<h2 class='subtitle'>Text 3</h2>
 				<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
@@ -50,7 +45,7 @@ export const ContentPage = () => {
 				<p class='para-text'>For any more information, ask me personally.</p>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
+			<div>
 				<h2 class='subtitle'>Text 4</h2>
 				<p class='para-text'>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
