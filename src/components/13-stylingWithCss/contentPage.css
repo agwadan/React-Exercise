@@ -23,9 +23,9 @@
 }
 
 .service-image-2{
-  width: 500px;
+  width: 450px;
   height: 500px;
-  background: radial-gradient(red 20%,green 40%, blue 50%);
+  background: radial-gradient( red 20%,green 40%, blue 50%);
 }
 
 #title{
