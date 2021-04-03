@@ -192,7 +192,7 @@ export const ContentPage = () => {
 		
 		<p class='para-text'><a class='link' href="https://www.youtube.com/watch?v=lFF2bkiHNVQ" target="black">Watch Ken Block drive with Captain Slow in the car.</a></p>
 		
-		<p class='para-text'>Well, the above text is a link. When clicked, it will lead one to a youtube video of Ken Block hosted on a Top Gear Show by James May. 
+		<p class='para-text'><span class='italics'>Well, the above text is a link.</span> When clicked, it will lead one to a youtube video of Ken Block hosted on a Top Gear Show by James May. 
 		Not in studio, but at an air field doing what he does best.<br/>
 		So, this paragraph is to test the use of links. linking this page to another sight.
 		<br/>I have further modified it to open the link in a new tab.</p>
