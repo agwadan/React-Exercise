@@ -1,5 +1,6 @@
 .body-content{
   background: rgba(204, 229, 255, 0.2);
+  text-align: center;/* Align text on the page. */
 }
 
 .service-image{/* 
@@ -34,4 +35,11 @@
 
 .subtitle{
   color: rgb(165, 0, 0);
+}
+
+/* ---------------TEXT DECORATION---------- */
+.link{
+  text-decoration: underline;
+  text-transform: capitalize; /* handles case of the text... like this which capitalizes every word in the text */
+  
 }
