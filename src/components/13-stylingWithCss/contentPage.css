@@ -2,7 +2,7 @@
   background: rgba(204, 229, 255, 0.2);
   text-align: justify;/* Align text on the page. */
   font-size: 1em;
-
+  font-family: monospace;/* Majorly 3: serif, san-serif, monospace */
 }
 
 .service-image{/* 
