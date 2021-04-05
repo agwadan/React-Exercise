@@ -15,7 +15,7 @@ export const QuestionTwo = () => {
     return axios.get('https://randomuser.me/api')
       .then(({ data }) => {
         console.log(data);
-        return JSON.stringify(data);
+        return JSON.stringify(data, null, 2);
       })
       .catch(err => console.log(err))
   };
@@ -26,7 +26,7 @@ export const QuestionTwo = () => {
       <h5>Fetch data from the provided api, and display it as a string.</h5>
       <p>_______________</p>
       <button onClick={() => fetchData()}>Fetch Random Data</button>
-      <p>{randomDataJSON}</p>
+      <pre>{randomDataJSON}</pre>{/* Pre tag makes the json data look pretty */}
     </div>
   )
 }
