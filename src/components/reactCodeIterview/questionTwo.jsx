@@ -12,12 +12,20 @@ export const QuestionTwo = () => {
   }, []);
 
   const fetchData = () => {
-    return axios.get('https://randomuser.me/api')
+
+    return fetch('https://randomuser.me/api')
+      .then(response => response.json())
+      .then((data) => {
+        console.log(data);
+        return JSON.stringify(data, null, 2);
+      })
+
+    /* return axios.get('https://randomuser.me/api')
       .then(({ data }) => {
         console.log(data);
         return JSON.stringify(data, null, 2);
       })
-      .catch(err => console.log(err))
+      .catch(err => console.log(err)) */
   };
 
   return (
