@@ -1,6 +1,61 @@
 import React, { useState } from 'react';
 
-export default function ControlledInputs() {
+const ControlledInputs = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [users, setUser] = useState([])
+
+  /*   const updateName = (e) => {
+  
+    } */
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (name && email) {
+      const person = {
+        name: name,
+        email: email
+      }
+      console.log(person);
+      setUser((users) => {
+        return [...users, person];
+      });
+
+      setName('');
+      setEmail('');
+    } else {
+      console.log('user not registered');
+    }
+    console.log(`${name}'s email is ${email}`);
+    console.log(users);
+  }
+
+  return (
+    <article>
+      <form onSubmit={handleSubmit}>
+        <label>Name:</label>
+        <input type='text' id='name' name='name' value={name} onChange={(e) => setName(e.target.value)} />
+        <label>Email:</label>
+        <input type='text' id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+        <button type='submit'>Submit</button>
+      </form>
+      {users.map((user) => {
+        const { name, email } = user;
+        return (
+          <div key={email}>
+            <p>{name}'s email is <i><u>{email}</u></i></p>
+          </div>
+        )
+      })}
+    </article>
+  )
+}
+
+export default ControlledInputs;
+
+/* export default function ControlledInputs() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -78,3 +133,4 @@ export default function ControlledInputs() {
     </div >
   )
 }
+ */
