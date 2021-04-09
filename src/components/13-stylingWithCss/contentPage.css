@@ -50,3 +50,8 @@
 .italics{
   font-style: oblique; /* italicizes the text */
 }
+
+#landscape-image{
+  height: 400px;
+  width: 50vw;
+}
