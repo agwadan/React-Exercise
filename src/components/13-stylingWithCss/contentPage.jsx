@@ -59,15 +59,13 @@ export const ContentPage = () => {
 			</div>
 			
 
-			<div class="row">
-				<div>
+		
 				<h2 class='subtitle' id="dob">DOB</h2><small>Date Of Birth</small>
 				
 				<p class='para-text'>I, the designer of this web page, am <i><b>Daniel Agwa</b></i>. I was born on the <i><b>5<sup>th</sup>, November 1996</b></i>.</p>
 				<img id='landscape-image' src={pic} alt='pic'/>
 				If you ever wish to contact me, all you need is below;<br/><br/>
-				</div>
-			</div>
+			
 
 		</div>
 		<br/><br/><hr/><br/><br/>

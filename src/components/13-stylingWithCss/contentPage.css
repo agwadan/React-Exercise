@@ -3,6 +3,7 @@
   text-align: justify;/* Align text on the page. */
   font-size: 1em;
   font-family: monospace;/* Majorly 3: serif, san-serif, monospace */
+  margin-left: 20px;
 }
 
 .service-image{/* 
@@ -16,6 +17,7 @@
   height: 500px;
   background: royalblue;
   background: linear-gradient(to right top, rgb(0,0,255), rgba(0,0,255,0));
+  float: right;
 }
 
 .service-image-1{
@@ -31,6 +33,7 @@
   height: 500px;
   background: radial-gradient( red 20%,green 40%, blue 50%);
   border: 2px solid #a00101; /* size style color */
+  display: inline-block;
 }
 
 #title{
@@ -59,4 +62,5 @@
   border: 6px solid #a00101; 
   padding: 100px 50px 25px 12px;/* top right bottom left */
  margin: 40px; /* Adds space around the element */
+ 
 }
