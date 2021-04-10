@@ -23,12 +23,14 @@
   height: 500px;
   background: orange;
   background: linear-gradient(160deg,orange, rgba(0,0,255,0));
+  
 }
 
 .service-image-2{
   width: 450px;
   height: 500px;
   background: radial-gradient( red 20%,green 40%, blue 50%);
+  border: 2px solid #a00101; /* size style color */
 }
 
 #title{
