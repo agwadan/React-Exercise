@@ -61,6 +61,5 @@
   width: 50vw;
   border: 6px solid #a00101; 
   padding: 100px 50px 25px 12px;/* top right bottom left */
- margin: 40px; /* Adds space around the element */
- 
+  margin: 40px; /* Adds space around the element */
 }

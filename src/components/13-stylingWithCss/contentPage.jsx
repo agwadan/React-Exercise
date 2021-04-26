@@ -1,6 +1,8 @@
 import React from 'react';
 import './contentPage.css';
 import pic from '../../assets/img/landscape.jpg';
+import { Tables } from './tables';
+
 
 export const ContentPage = () => {
   return (
@@ -205,6 +207,8 @@ export const ContentPage = () => {
 		<p class='para-text'>Here, I will take you back to the <a class='link' href="#top">top</a> of this page. 
 		If you wish to know the schools I attended, you can click <a class='link' href="#schools">here.</a></p>	
 		<br/><br/>
+
+		<Tables/>
 	</div>
   )
 }
