@@ -64,11 +64,23 @@
   margin: 40px; /* Adds space around the element */
 }
 
+.container{
+  background-color: rgb(210, 245, 233);
+  display: flex;
+}
+
+.container-item{
+  background-color: #a00101;
+  color: aliceblue;
+  font-size: 25px;
+  width: 70px;
+  line-height: 50px;
+  margin: 10px;
+  text-align: center;
+}
+
 /* 
-
     DISPLAY
-
     --> Inline block elements keep elements on the same line.
     --> Block display elements place the elements on a new line.
-
 */

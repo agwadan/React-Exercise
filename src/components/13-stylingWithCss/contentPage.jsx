@@ -208,6 +208,14 @@ export const ContentPage = () => {
 		If you wish to know the schools I attended, you can click <a class='link' href="#schools">here.</a></p>	
 		<br/><br/>
 
+		<div className="container">
+			<div className="container-item">A</div>
+			<div className="container-item">B</div>
+			<div className="container-item">C</div>
+			<div className="container-item">D</div>
+			<div className="container-item">E</div>
+		</div>
+
 		<Tables/>
 	</div>
   )
