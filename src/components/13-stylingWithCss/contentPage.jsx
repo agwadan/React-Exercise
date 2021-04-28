@@ -209,16 +209,11 @@ export const ContentPage = () => {
 		<br/><br/>
 
 		<div className="container">
-			<div className="container-item" style={{order: 2}}>A</div>
-			<div className="container-item" style={{order: 4}}>B</div>
-			<div className="container-item" style={{order: 5}}>C</div>
-			<div className="container-item" style={{order: 3}}>D</div>
-			<div className="container-item" style={{order: 1}}>E</div>
-			<div className="container-item">F</div>
-			<div className="container-item">Y</div>
-			<div className="container-item">C</div>
-			<div className="container-item">K</div>
-			<div className="container-item">W</div>
+			<div className="container-item" style={{order: 2 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>A</div>
+			<div className="container-item" style={{order: 4 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>B</div>
+			<div className="container-item" style={{order: 5 , flexGrow: 1,flexShrink: 0,flexBasis: '100px'}}>C</div>
+			<div className="container-item" style={{order: 3 , flexGrow: 1,flexShrink: 3,flexBasis: '100px'}}>D</div>
+			<div className="container-item" style={{order: 1 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>E</div>
 		</div>
 
 		<Tables/>
