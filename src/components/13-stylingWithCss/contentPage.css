@@ -73,6 +73,8 @@
   align-items: flex-start;/* Aligns the items between the top and bottom */
 }
 
+
+
 .container-item{
   background-color: #a00101;
   border-radius: 4px;
@@ -83,7 +85,6 @@
   margin: 10px;
   text-align: center;
 }
-
 /* 
     DISPLAY
     --> Inline block elements keep elements on the same line.
