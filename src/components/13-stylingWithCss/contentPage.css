@@ -67,10 +67,15 @@
 .container{
   background-color: rgb(210, 245, 233);
   display: flex;
+  flex-direction: row; /*     other values -> row-reverse, column, column-reverse */
+  flex-wrap: wrap; /*         other values -> wrap-reverse, no-wrap */
+  justify-content: center; /* other values -> flex-end, flex-start, space-between, space-around */
+  align-items: flex-start;/* Aligns the items between the top and bottom */
 }
 
 .container-item{
   background-color: #a00101;
+  border-radius: 4px;
   color: aliceblue;
   font-size: 25px;
   width: 70px;

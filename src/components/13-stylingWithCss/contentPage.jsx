@@ -214,6 +214,11 @@ export const ContentPage = () => {
 			<div className="container-item">C</div>
 			<div className="container-item">D</div>
 			<div className="container-item">E</div>
+			<div className="container-item">F</div>
+			<div className="container-item">Y</div>
+			<div className="container-item">Z</div>
+			<div className="container-item">K</div>
+			<div className="container-item">W</div>
 		</div>
 
 		<Tables/>
