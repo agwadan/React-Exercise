@@ -67,10 +67,14 @@
 .container{
   background-color: rgb(210, 245, 233);
   display: grid;
-  flex-direction: row; /*     other values -> row-reverse, column, column-reverse */
-  flex-wrap: wrap; /*         other values -> wrap-reverse, no-wrap */
-  justify-content: center; /* other values -> flex-end, flex-start, space-between, space-around */
-  align-items: flex-start;/*  Aligns the items between the top and bottom */
+  grid-template-columns: auto auto auto;/* Equally divides the columns to 3 */
+  grid-template-rows: auto auto; /* Equally plits the rows to 2 */
+
+
+  /* flex-direction: row; /*     other values -> row-reverse, column, column-reverse 
+  flex-wrap: wrap;        other values -> wrap-reverse, no-wrap 
+  justify-content: center; other values -> flex-end, flex-start, space-between, space-around 
+  align-items: flex-start;/*  Aligns the items between the top and bottom */ 
 }
 
 .container-item{
