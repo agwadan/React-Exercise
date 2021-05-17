@@ -66,14 +66,12 @@
 
 .container{
   background-color: rgb(210, 245, 233);
-  display: flex;
+  display: grid;
   flex-direction: row; /*     other values -> row-reverse, column, column-reverse */
   flex-wrap: wrap; /*         other values -> wrap-reverse, no-wrap */
   justify-content: center; /* other values -> flex-end, flex-start, space-between, space-around */
-  align-items: flex-start;/* Aligns the items between the top and bottom */
+  align-items: flex-start;/*  Aligns the items between the top and bottom */
 }
-
-
 
 .container-item{
   background-color: #a00101;
