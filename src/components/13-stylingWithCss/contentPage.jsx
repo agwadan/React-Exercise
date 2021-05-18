@@ -213,7 +213,8 @@ export const ContentPage = () => {
 			<div className="container-item" style={{order: 4 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>B</div>
 			<div className="container-item" style={{order: 5 , flexGrow: 1,flexShrink: 0,flexBasis: '100px'}}>C</div>
 			<div className="container-item" style={{order: 3 , flexGrow: 1,flexShrink: 3,flexBasis: '100px'}}>D</div>
-			<div className="container-item" style={{order: 1 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>E</div>
+			<div className="container-item" style={{order: 1 , flexGrow: 1,flexShrink: 1,flexBasis: '100px', gridColumn: '1/span 2', gridRow: '1/ span 2'}}>E</div>
+			<div className="container-item" style={{order: 6 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>F</div>
 		</div>
 
 		<Tables/>

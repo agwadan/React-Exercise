@@ -71,7 +71,9 @@
   grid-template-columns: auto auto auto;/* Equally divides the columns to 3 */
   grid-template-rows: auto auto; /* Equally plits the rows to 2 */
   justify-content: space-evenly; /* start, center, end, space-around, space-between*/
-  gap: 100px 40px; /* row first column second */
+  
+
+  /*gap: 100px 40px; row first column second */
   
 
   /* flex-direction: row; /*     other values -> row-reverse, column, column-reverse 
@@ -85,7 +87,7 @@
   border-radius: 4px;
   color: aliceblue;
   font-size: 25px;
-  width: 70px;
+  width: 100%;
   line-height: 50px;
   margin: 10px;
   text-align: center;
