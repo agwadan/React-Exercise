@@ -98,10 +98,22 @@
     --> Block display elements place the elements on a new line.
 */
 
+#intro{
+  /* animation-name:  white-to-green;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  -webkit-animation: white-to-green 3s linear 0s infinite alternate-reverse ;
+  -moz-animation: white-to-green 3s linear 0s infinite alternate-reverse ;
+  -o-animation: white-to-green 3s linear 0s infinite alternate-reverse ;
+  -ms-animation: white-to-green 3s linear 0s infinite alternate-reverse ;
+}
+
 @keyframes white-to-green{
   0%{background-color: white;}
   50%{background-color: black;}
-  100%{background-color:#9cff83 ;}
+  100%{background-color:#9cff83 ;} 
   
   /* from{
     background-color: #fff;

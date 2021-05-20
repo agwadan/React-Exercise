@@ -9,7 +9,7 @@ export const ContentPage = () => {
     <div class='body-content'>
       <h1 id='title'>My Page</h1>
 			<div class="row">	
-				<p class='para-text'> <span class="glyphicon glyphicon-film"></span>This page is entirely a test page.  I will just type what I feel like. this is just to really
+				<p class='para-text' id='intro' > <span class="glyphicon glyphicon-film"></span>This page is entirely a test page.  I will just type what I feel like. this is just to really
 				occupy some space in the page and try to make the web page have some content. <br/>
 				I first worked on this page on the <i><b>14<sup>th</sup>, August 2017</b></i>.</p>
 				<p>That is it about this page.</p>
@@ -211,7 +211,7 @@ export const ContentPage = () => {
 		<div className="container">
 			<div className="container-item" style={{order: 2 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>A</div> {/*Syntax for flex property =>  flex : grow, shrink , basis */}
 			<div className="container-item" style={{order: 4 , flexGrow: 1,flexShrink: 1,flexBasis: '100px',gridArea: '2 / 1 / span 2 / span 2' /* "rowStart, columnStart, rowEnd, columnEnd
-		" */}}>B</div>
+		 " */}}>B</div>
 			<div className="container-item" style={{order: 5 , flexGrow: 1,flexShrink: 0,flexBasis: '100px'}}>C</div>
 			<div className="container-item" style={{order: 3 , flexGrow: 1,flexShrink: 3,flexBasis: '100px'}}>D</div>
 			<div className="container-item" style={{order: 1 , flexGrow: 1,flexShrink: 1,flexBasis: '100px', gridColumn: '1/span 2', gridRow: '1/ span 2'}}>E</div> {/* grid starts at 1, and occuoies 2 spaces, 1 and itself. */}
