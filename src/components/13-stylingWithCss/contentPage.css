@@ -97,3 +97,16 @@
     --> Inline block elements keep elements on the same line.
     --> Block display elements place the elements on a new line.
 */
+
+@keyframes white-to-green{
+  0%{background-color: white;}
+  50%{background-color: black;}
+  100%{background-color:#9cff83 ;}
+  
+  /* from{
+    background-color: #fff;
+  }
+  to{
+    background-color: #9cff83;
+  } */
+}

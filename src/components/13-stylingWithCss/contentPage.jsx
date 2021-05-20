@@ -210,7 +210,8 @@ export const ContentPage = () => {
 
 		<div className="container">
 			<div className="container-item" style={{order: 2 , flexGrow: 1,flexShrink: 1,flexBasis: '100px'}}>A</div> {/*Syntax for flex property =>  flex : grow, shrink , basis */}
-			<div className="container-item" style={{order: 4 , flexGrow: 1,flexShrink: 1,flexBasis: '100px',gridArea: '2 / 1 / span 2 / span 2' /* "rowStart, columnStart, rowEnd, columnEnd" */}}>B</div>
+			<div className="container-item" style={{order: 4 , flexGrow: 1,flexShrink: 1,flexBasis: '100px',gridArea: '2 / 1 / span 2 / span 2' /* "rowStart, columnStart, rowEnd, columnEnd
+		" */}}>B</div>
 			<div className="container-item" style={{order: 5 , flexGrow: 1,flexShrink: 0,flexBasis: '100px'}}>C</div>
 			<div className="container-item" style={{order: 3 , flexGrow: 1,flexShrink: 3,flexBasis: '100px'}}>D</div>
 			<div className="container-item" style={{order: 1 , flexGrow: 1,flexShrink: 1,flexBasis: '100px', gridColumn: '1/span 2', gridRow: '1/ span 2'}}>E</div> {/* grid starts at 1, and occuoies 2 spaces, 1 and itself. */}
