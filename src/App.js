@@ -4,17 +4,18 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './App.css';
+import TabView from './components/tabs/TabView';
 /* import { ContentPage } from './components/13-stylingWithCss/contentPage';
 import { Interview } from './components/reactCodeIterview'; */
 /* import UseEffectFetchData from './components/2-useEffect/UseEffectFetchData';
 import ControlledInputs from './components/4-forms/ControlledInputs'; */
-import { ContentPage } from './components/13-stylingWithCss/contentPage';
+//import { ContentPage } from './components/13-stylingWithCss/contentPage';
 class App extends React.Component {
 
   render() {
     return (
       <div /* className='container' */>
-        <ContentPage />
+        <TabView/>
       </div>
 
     );
