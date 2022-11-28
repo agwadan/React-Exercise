@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './TabView.css';
 
 function TabView({ title, tabs = {} }) {
   
@@ -13,8 +14,7 @@ function TabView({ title, tabs = {} }) {
       <div className="body">
         {Object.keys(tabs).length === 0 ? 
           <div>No tabs</div> :
-          
-          
+             
           <div>
 
             {/* Tab Headers */}
@@ -23,7 +23,8 @@ function TabView({ title, tabs = {} }) {
                 tabs.map((tab, index) => 
                   <label
                     key={index}
-                    className={index === activateTab ? 'active-tab' : 'tab'}
+                    className={index === activeTabIndex ? 'active-tab' : 'tab'}
+                    onClick={()=>activateTab(index)}
                   >
                     {tab.name}
                   </label>)
